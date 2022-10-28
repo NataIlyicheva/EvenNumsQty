@@ -39,7 +39,7 @@ int FindEvenNumsQty(int[] array)
     return counter;
 }
 
-int[] arr = InitArray(length);
+int[] arr = InitArray(array);
 PrintArray(arr);
 int count = FindEvenNumsQty(arr);
-Console.WriteLine($"Кол-во четных чисел в массиве = {count}. ");
+Console.WriteLine($"Кол-во четных чисел в массиве = {count}. "); 
