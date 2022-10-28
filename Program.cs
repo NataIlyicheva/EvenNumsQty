@@ -33,13 +33,15 @@ int FindEvenNumsQty(int[] array)
 {
     int counter = 0;
     for (int i = 0; i < array.Length; i++)
-    if(array[i] % 2 == 0);
-    counter++;
-
+    {
+        if(array[i] % 2 == 0)
+        counter++;
+    }
     return counter;
 }
 
-int[] arr = InitArray(array);
+int length = GetNumber("Введите размерность массива");
+int[] arr = InitArray(length);
 PrintArray(arr);
 int count = FindEvenNumsQty(arr);
 Console.WriteLine($"Кол-во четных чисел в массиве = {count}. "); 
